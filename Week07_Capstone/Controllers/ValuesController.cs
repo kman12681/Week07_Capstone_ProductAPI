@@ -27,7 +27,7 @@ namespace Week07_Capstone.Controllers
 
         }
 
-        public List<Product> GetProductByID(int id)
+        public List<Product> GetProducts(int id)
         {
             List<Product> products = (from p in db.Products
                                       where p.ProductID == id
